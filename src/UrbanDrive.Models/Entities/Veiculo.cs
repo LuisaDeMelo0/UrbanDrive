@@ -4,7 +4,7 @@ namespace UrbanDrive.Entities
 {
     public class Veiculo
     {
-        private string _placa;
+        private string _placa = string.Empty;
         public int Identificador { get; set; }
         public string Modelo { get; set; }
         public decimal ValorBaseDiaria { get; set; }
