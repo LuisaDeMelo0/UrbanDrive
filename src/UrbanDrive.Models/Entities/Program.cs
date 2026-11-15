@@ -11,6 +11,8 @@ namespace UrbanDrive
             Frota frota = new Frota();
             frota.AdicionarVeiculo(veiculo);
 
+            Motorista motorista = new Motorista(1, "Motorista Teste", "12345678900", "B", new DateOnly(2030, 12, 31));
+
             while (true)
             {
                 Console.WriteLine("\n=== UrbanDrive — Sprint 1 ===");
@@ -19,6 +21,7 @@ namespace UrbanDrive
                 Console.WriteLine("3 - Alterar a placa do veículo atual");
                 Console.WriteLine("4 - Exibir veículos da frota");
                 Console.WriteLine("5 - Exibir configurações do sistema");
+                Console.WriteLine("6 - Exibir motorista e CNH");
                 Console.WriteLine("0 - Sair");
                 Console.Write("Escolha uma opção: ");
 
@@ -57,6 +60,15 @@ namespace UrbanDrive
 
                         case "5":
                             ConfiguradorSistema.ExibirConfiguracoes();
+                        break;
+
+                        case "6":
+                            Console.WriteLine("\n=== Dados do Motorista ===");
+                            Console.WriteLine($"ID: {motorista.Identificador}");
+                            Console.WriteLine($"Nome: {motorista.Nome}");
+                            Console.WriteLine($"Número da CNH: {motorista.CNH.Numero}");
+                            Console.WriteLine($"Categoria: {motorista.CNH.Categoria}");
+                            Console.WriteLine($"Validade: {motorista.CNH.DataValidade}");
                         break;
 
                         default:
