@@ -23,8 +23,8 @@ Ampliar o modelo orientado a objetos para representar relacionamentos entre clas
 | T05 | Implementar classes `Motorista` e `CNH` (Composição) | RF03 | Vinícius | 2h |
 | T06 | Implementar classe `Frota` (Agregação com veículos) | RF04 | Marcus | 2h |
 | T07 | Criar classe `ConfiguradorSistema` (Membros estáticos) | RF05 | Marcus | 1h |
-| T08 | Atualizar `Program.cs` com testes dos novos relacionamentos | RF03, RF04, RF05 | Luisa | 1h |
-| T09 | Atualizar diagrama de classes na pasta de documentação | RF03, RF04, RF05 | Gustavo | 1h |
+| T08 | Atualizar `Program.cs` com testes dos novos relacionamentos | RF03, RF04, RF05 | Luisa / Marcus | 1,5h |
+| T09 | Atualizar diagrama de classes na pasta de documentação | RF03, RF04, RF05 | Marcus | 1,5h |
 
 ## E. Critérios de aceitação
 * A `CNH` deve ser criada e gerenciada internamente pelo `Motorista`, não existindo de forma independente (composição).
@@ -46,7 +46,7 @@ Ampliar o modelo orientado a objetos para representar relacionamentos entre clas
 | T06 | Concluída | `Frota.cs` | Agregação implementada, com adição e listagem de veículos. |
 | T07 | Concluída | `ConfiguradorSistema.cs` | Propriedades e método estáticos implementados e testados. |
 | T08 | Concluída | `Program.cs` | Demonstração integrada das classes e testes de validação realizados. |
-| T09 | Pendente | Diagrama de classes | Atualização e registro do diagrama ainda necessários |
+| T09 | Concluída | Diagrama de classes | Atualização e registro do diagrama ainda necessários |
 
 Testes realizados
 Teste                                        Resultado
