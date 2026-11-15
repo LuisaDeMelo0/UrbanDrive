@@ -18,6 +18,7 @@ namespace UrbanDrive
                 Console.WriteLine("2 - Criar veículo com uma placa digitada");
                 Console.WriteLine("3 - Alterar a placa do veículo atual");
                 Console.WriteLine("4 - Exibir veículos da frota");
+                Console.WriteLine("5 - Exibir configurações do sistema");
                 Console.WriteLine("0 - Sair");
                 Console.Write("Escolha uma opção: ");
 
@@ -52,6 +53,10 @@ namespace UrbanDrive
 
                         case "4":
                             frota.ExibirVeiculos();
+                        break;
+
+                        case "5":
+                            ConfiguradorSistema.ExibirConfiguracoes();
                         break;
 
                         default:
